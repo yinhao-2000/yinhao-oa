@@ -12,12 +12,10 @@
   <artifactId>yinhao-oa</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>Archetype - yinhao-oa</name>
-  <url>http://maven.apache.org</url>
   <modules>
+    <module>common</module>
+    <module>model</module>
     <module>service-oa</module>
-    <module>common/common-util</module>
-    <module>common/spring-security</module>
   </modules>
 
   <properties>

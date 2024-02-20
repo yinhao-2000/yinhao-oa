@@ -7,8 +7,6 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>service-util</artifactId>
-    <name>Archetype - service-util</name>
-    <url>http://maven.apache.org</url>
 
 
     <dependencies>
@@ -21,6 +19,10 @@
             <groupId>org.yinhao-oa</groupId>
             <artifactId>common-util</artifactId>
             <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
