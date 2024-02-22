@@ -75,18 +75,6 @@ CREATE TABLE `sys_login_log` (
     PRIMARY KEY (`id`)
 ) COMMENT = "SysLoginLog" ENGINE = innodb;
 
-CREATE TABLE `oa_process_record` (
-    `id` int NOT NULL AUTO_INCREMENT,
-    `process_id` int DEFAULT NULL COMMENT '审批流程id',
-    `description` varchar(128) DEFAULT '' COMMENT '审批描述',
-    `status` int DEFAULT NULL COMMENT '状态',
-    `operate_user_id` int DEFAULT NULL COMMENT '操作用户id',
-    `operate_user` varchar(128) DEFAULT '' COMMENT '操作用户',
-    PRIMARY KEY (`id`),
-    KEY `idx_process_id` (`process_id`) USING BTREE,
-    KEY `idx_operate_user_id` (`operate_user_id`) USING BTREE
-) ENGINE = innodb DEFAULT CHARSET = utf8 COMMENT = 'ProcessRecord';
-
 CREATE TABLE `sys_oper_log` (
     `id` int NOT NULL AUTO_INCREMENT,
     `title` varchar (128) NULL DEFAULT '' COMMENT '模块标题',
