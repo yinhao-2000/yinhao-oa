@@ -16,6 +16,6 @@
 
 项目相关表的ER图如下所示
 
-![img.png](img.png)
+![img.png](images/er.jpg)
 
 
