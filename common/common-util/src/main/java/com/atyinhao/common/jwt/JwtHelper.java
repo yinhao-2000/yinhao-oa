@@ -60,12 +60,12 @@ public class JwtHelper {
         }
     }
 
-    public static void main(String[] args) {
-        String token = JwtHelper.createToken(6L, "li4");
-        System.out.println(token);
-        Long userId = JwtHelper.getUserId(token);
-        String username = JwtHelper.getUsername(token);
-        System.out.println(userId);
-        System.out.println(username);
-    }
+//    public static void main(String[] args) {
+//        String token = JwtHelper.createToken(6L, "li4");
+//        System.out.println(token);
+//        Long userId = JwtHelper.getUserId(token);
+//        String username = JwtHelper.getUsername(token);
+//        System.out.println(userId);
+//        System.out.println(username);
+//    }
 }

@@ -156,3 +156,20 @@ CREATE TABLE `wechat_menu` (
     PRIMARY KEY (`id`),
     index `idx_parent_id` USING btree (`parent_id`)
 ) COMMENT = "菜单" ENGINE = innodb;
+
+
+
+ALTER TABLE `wechat_menu` ADD COLUMN `create_time` datetime NULL, ADD COLUMN `update_time` datetime NULL, ADD COLUMN `is_deleted` smallint NULL;
+ALTER TABLE `oa_process` ADD COLUMN `create_time` datetime NULL, ADD COLUMN `update_time` datetime NULL, ADD COLUMN `is_deleted` smallint NULL;
+ALTER TABLE `oa_process_record` ADD COLUMN `create_time` datetime NULL, ADD COLUMN `update_time` datetime NULL, ADD COLUMN `is_deleted` smallint NULL;
+ALTER TABLE `oa_process_template` ADD COLUMN `create_time` datetime NULL, ADD COLUMN `update_time` datetime NULL, ADD COLUMN `is_deleted` smallint NULL;
+ALTER TABLE `oa_process_type` ADD COLUMN `create_time` datetime NULL, ADD COLUMN `update_time` datetime NULL, ADD COLUMN `is_deleted` smallint NULL;
+ALTER TABLE `sys_dept` ADD COLUMN `create_time` datetime NULL, ADD COLUMN `update_time` datetime NULL, ADD COLUMN `is_deleted` smallint NULL;
+ALTER TABLE `sys_login_log` ADD COLUMN `create_time` datetime NULL, ADD COLUMN `update_time` datetime NULL, ADD COLUMN `is_deleted` smallint NULL;
+ALTER TABLE `sys_menu` ADD COLUMN `create_time` datetime NULL, ADD COLUMN `update_time` datetime NULL, ADD COLUMN `is_deleted` smallint NULL;
+ALTER TABLE `sys_oper_log` ADD COLUMN `create_time` datetime NULL, ADD COLUMN `update_time` datetime NULL, ADD COLUMN `is_deleted` smallint NULL;
+ALTER TABLE `sys_post` ADD COLUMN `create_time` datetime NULL, ADD COLUMN `update_time` datetime NULL, ADD COLUMN `is_deleted` smallint NULL;
+ALTER TABLE `sys_role` ADD COLUMN `create_time` datetime NULL, ADD COLUMN `update_time` datetime NULL, ADD COLUMN `is_deleted` smallint NULL;
+ALTER TABLE `sys_role_menu` ADD COLUMN `create_time` datetime NULL, ADD COLUMN `update_time` datetime NULL, ADD COLUMN `is_deleted` smallint NULL;
+ALTER TABLE `sys_user_role` ADD COLUMN `create_time` datetime NULL, ADD COLUMN `update_time` datetime NULL, ADD COLUMN `is_deleted` smallint NULL;
+ALTER TABLE `sys_user` ADD COLUMN `create_time` datetime NULL, ADD COLUMN `update_time` datetime NULL, ADD COLUMN `is_deleted` smallint NULL;

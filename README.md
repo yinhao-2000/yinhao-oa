@@ -19,3 +19,10 @@
 ![img.png](images/er.jpg)
 
 
+
+# 部署
+
+restart.sh
+```shell
+sh deploy.sh
+```
